@@ -1,7 +1,8 @@
 <resources>
     <string name="app_name">TaekStagram</string>
-    <string name="facebook_app_id">397161661812167</string>
-    <string name="fb_login_protocol_scheme">fb397161661812167</string>
+    <string name="facebook_app_id">742095204192311</string>
+    <string name="fb_login_protocol_scheme">fbeb0235fa00e61c99536fa93d090e80e2</string>
+    <string name="facebook_client_token">eb0235fa00e61c99536fa93d090e80e2</string>
     <!--  Sign In  -->
     <string name="email">Email</string>
     <string name="phone_number">Phone Number</string>
