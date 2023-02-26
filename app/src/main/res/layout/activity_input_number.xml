@@ -2,7 +2,11 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools">
 
-    <data></data>
+    <data>
+        <variable
+            name="viewModel"
+            type="com.taek.taekstagram.login.InputNumberViewModel" />
+    </data>
 
     <RelativeLayout
         android:layout_width="match_parent"
@@ -29,6 +33,7 @@
                 android:layout_marginRight="20dp">
 
                 <EditText
+                    android:text="@={viewModel.inputNumber}"
                     android:id="@+id/edittext_phonenumber"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -52,6 +57,7 @@
             android:orientation="vertical">
 
             <androidx.appcompat.widget.AppCompatButton
+                android:onClick="@{() -> viewModel.savePhoneNumber()}"
                 android:id="@+id/apply"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
